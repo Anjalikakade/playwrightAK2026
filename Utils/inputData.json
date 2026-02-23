@@ -1,0 +1,20 @@
+[
+    {
+        "email" : "anjali28@gmail.com",
+        "pass" : "Anjali@123",
+        "validity": "valid"
+
+    },
+    {
+        "email" : "an345@gmail.com",
+        "pass" : "345",
+        "validity": "invalid"
+
+    },
+    {
+        "email" :"",
+        "pass" :"",
+        "validity": "invalid"
+
+    }
+]

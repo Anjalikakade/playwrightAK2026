@@ -1,0 +1,4 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","5041","login","","2026-01-25","passed","2026-01-25","","allureReport.spec.ts","",""
+"","3648","URL","","2026-01-25","passed","2026-01-25","","allureReport.spec.ts","",""
+"","8461","title","","2026-01-25","failed","2026-01-25","","allureReport.spec.ts","",""
