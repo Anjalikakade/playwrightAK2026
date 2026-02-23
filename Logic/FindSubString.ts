@@ -17,4 +17,3 @@ if(check)
 }
 else
 console.log("No present..")
-console.log("Try programiz.pro");
