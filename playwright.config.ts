@@ -2,7 +2,7 @@ import { defineConfig, devices } from '@playwright/test';
 
 export default defineConfig({
   testDir: './tests',
-  testMatch: 'dialog.spec.ts',
+  testMatch: 'Pagination.spec.ts',
 
   //retries:1,
   //grep: /@sanity/,  // grepInvert:/@regression/,
@@ -18,17 +18,35 @@ export default defineConfig({
   //reporter:[['html'],['list'],['dot'],['line'],['json',{outputFile:'output.json'}],['junit',{outputFile:'output.xml'}]],
   //reporter:[['list'],['allure-playwright',{outputFolder:'allure-results'}]],
 
-  use: {
-    browserName: 'chromium',
-    headless: true,
-    screenshot: 'on',
-    trace: 'on',
-    video:'retain-on-failure',
-    viewport: null,
-    launchOptions: {
-      args: ['--start-maximized'], // start browser maximized
+  projects:[
+    {
+      name:'chrome',
+      use: {
+            browserName: 'chromium',
+            headless: true,
+            screenshot: 'on',
+            trace: 'on',
+            video:'retain-on-failure',
+            viewport: null,
+            launchOptions: {
+              args: ['--start-maximized'], // start browser maximized
+            }
+          }
     },
-  },
+    {
+      name:'firefox',
+      use :
+      {
+        browserName:'firefox',
+        headless:false,
+        screenshot:'on',
+        trace :'on'
+      }
+    }
+  ]
+
+  
+  
 });
 
 
