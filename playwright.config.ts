@@ -2,7 +2,7 @@ import { defineConfig, devices } from '@playwright/test';
 
 export default defineConfig({
   testDir: './tests',
-  testMatch: 'DownloadFile.spec.ts',
+  testMatch: 'dialog.spec.ts',
 
   //retries:1,
   //grep: /@sanity/,  // grepInvert:/@regression/,
@@ -20,7 +20,7 @@ export default defineConfig({
 
   use: {
     browserName: 'chromium',
-    headless: false,
+    headless: true,
     screenshot: 'on',
     trace: 'on',
     video:'retain-on-failure',
